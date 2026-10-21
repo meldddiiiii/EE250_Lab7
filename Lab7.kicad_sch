@@ -2025,6 +2025,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(junction
 		(at 123.19 83.82)
@@ -2055,6 +2170,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5ed131a9-a067-4a50-9365-93f665d18222")
+	)
+	(junction
+		(at 135.89 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "699a104d-d70d-4527-afd5-8a9964f40b86")
 	)
 	(junction
 		(at 105.41 66.04)
@@ -2272,16 +2393,6 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 123.19) (xy 140.97 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "85f0b85f-f2e8-4f47-a4b1-d655ed11b815")
-	)
-	(wire
-		(pts
 			(xy 110.49 53.34) (xy 114.3 53.34)
 		)
 		(stroke
@@ -2289,6 +2400,16 @@
 			(type default)
 		)
 		(uuid "8cf39c20-3d12-463e-a7a3-dc92e65d48a4")
+	)
+	(wire
+		(pts
+			(xy 135.89 125.73) (xy 135.89 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9146d1a6-8b05-4601-8f72-474c1ddaadd4")
 	)
 	(wire
 		(pts
@@ -2309,6 +2430,16 @@
 			(type default)
 		)
 		(uuid "a57c9761-1cb9-420c-9c59-01aad56283af")
+	)
+	(wire
+		(pts
+			(xy 135.89 121.92) (xy 140.97 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a689857a-fa72-4899-8092-d34bdeac4a26")
 	)
 	(wire
 		(pts
@@ -2359,16 +2490,6 @@
 			(type default)
 		)
 		(uuid "c4863a78-f65b-4346-ae1b-8c8d2f1d3dc5")
-	)
-	(wire
-		(pts
-			(xy 138.43 123.19) (xy 140.97 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d6422766-e33f-4d7a-8b35-06d561ad60a9")
 	)
 	(wire
 		(pts
@@ -2847,6 +2968,83 @@
 			(project "Lab7"
 				(path "/3484fe6d-76b7-47ba-af12-6146b1ceaa15"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 135.89 121.92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "47cbd86a-2cf1-4593-86e9-7450ab44d2f0")
+		(property "Reference" "#FLG01"
+			(at 135.89 120.015 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 129.54 119.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.89 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 135.89 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5fe19d8f-e8d1-4dc6-a618-555c436dff13")
+		)
+		(instances
+			(project "Lab7"
+				(path "/3484fe6d-76b7-47ba-af12-6146b1ceaa15"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -3378,7 +3576,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 138.43 123.19 0)
+		(at 135.89 125.73 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3389,7 +3587,7 @@
 		(fields_autoplaced yes)
 		(uuid "a392f72e-5931-4a61-b046-801e5570f80a")
 		(property "Reference" "#PWR01"
-			(at 138.43 129.54 0)
+			(at 135.89 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3400,7 +3598,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 138.43 128.27 0)
+			(at 135.89 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3410,7 +3608,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 138.43 123.19 0)
+			(at 135.89 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3421,7 +3619,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 138.43 123.19 0)
+			(at 135.89 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3432,7 +3630,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 138.43 123.19 0)
+			(at 135.89 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
